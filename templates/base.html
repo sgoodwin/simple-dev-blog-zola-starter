@@ -143,6 +143,8 @@
         {{ config.extra.footer_page | markdown | safe }}
       {% endif %}
     {% endblock footer %}
+
+      <center><a href="{{ get_url(path="rss.xml", trailing_slash=false) }}">Subscribe via RSS</a></center>
     </footer>
   </body>
 </html>
